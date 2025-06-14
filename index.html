@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rambel-Portafolio</title>
+</head>
+<body>
+
+    
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img class="logo_imagen" src="./src/img/logo1.5.png" alt="rambel">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="./src/img/catByte.jpeg" alt="byte" />
+            </div>
+            <div class="hero-text">
+                <h1>Matías Ramírez Belmar</h1>
+                <p>Desarrollador de Software</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
+                        <img class="logo_linkedin" src="./src/img/LI-In-Bug.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
+                        <img class="logo_linkedin" src="./src/img/github-mark.png" alt="LinkedIn">
+                    </a>
+
+                    <a href="#" onclick="copiarCorreo()" title="Copiar correo">
+                        <img class="logo_gmail" src="./src/img/icons8-gmail-nuevo-48.png" alt="Copiar correo" />
+                    </a>
+
+                    <!-- <span class="tooltip-text">Copiar correo</span> -->
+
+                   <span id="mensaje-copiado" class="toast-copiado">¡Correo copiado!</span>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Actualmente trabajando como desarrollador Front-End en React.JS. Titulado de Analista Programador Computacional 
+                y cursando el séptimo semestre de Ingeniería en Informática.
+                Me considero un profesional con capacidad de adaptación, proactivo y creativo, 
+                con habilidades de trabajo en equipo.
+            </p>
+        </section>
+
+        <section id="proyectos" class="sobre-mi">
+        <h2>Proyectos</h2>
+            <article>
+                <h3>Nombre del Proyecto</h3>
+                <p>Descripción, tecnologías usadas, enlace a GitHub o demo.</p>
+            </article>
+            <article>
+                <h3>Nombre del Proyecto</h3>
+                <p>Descripción, tecnologías usadas, enlace a GitHub o demo.</p>
+            </article>
+        </section>
+
+        <section class="sobre-mi" id="experiencia">
+            <h2>Experiencia</h2>
+            <div class="timeline">
+
+            <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>Desarrollador Front-End en React</h3>
+                <p class="timeline-content-empresa">IT SMART • Especialistas en Servicios TI</p>
+                <p class="timeline-content-tiempo"><em>julio 2024 - Actualidad</em></p>
+                <p><em>Trabajando para los clientes de la empresa Socius.</em></p>
+                <p>
+                    Renovación de portal web para importante empresa de seguros (Chile) <br/>
+                    - Desarrollo del Front-end con React JS y Material-UI, 
+                    aplicando patrones de diseño consistentes.<br/>
+                    - Implementación de manejo de estados global con Redux y 
+                    middleware asincrónico con Redux Thunk, optimizando el flujo de datos y 
+                    mejorando la performance de la aplicación.<br/>
+                    Apoyo en la documentación técnica de bases de datos y consumo de API REST, facilitando la integración entre Front-end y Back-end.<br/>
+                    - Participación en un proceso de migración tecnológica desde Genexus a React, contribuyendo a la modernización de una plataforma crítica para la operación del cliente.
+
+                </p>
+                <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong> React, Redux, Material-UI, Javascript</p>
+
+            </div>
+            </div>
+
+            <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>Consultor Trainee</h3>
+                <p class="timeline-content-empresa">Apiux Tech • Usando el poder de la Tecnología para transformar su negocio</p>
+                <p class="timeline-content-tiempo"><em>abril 2023 - junio 2024</em></p>
+                <p>Renovación de portal web – Importante empresa de transporte de valores<br/> 
+                - Desarrollo Front-end con React y Next.js, enfocando en performance y experiencia de usuario.<br/>
+                - Diseño y propuesta de interfaces usando Prime React, asegurando consistencia visual y usabilidad.<br/>
+                Proyecto interno – Gestión de documentación de RRHH<br/>
+                - Desarrollo Front-end en React JS, colaborando en la creación de módulos para manejo de datos sensibles y flujos internos.<br/>
+                Proyecto de gestión documental – Mayor proyecto astronómico en Chile<br/>
+                - Desarrollo Front-end en React JS, apoyando en la implementación de vistas y componentes para la gestión y consulta de documentos científicos.<br/>
+                Proyecto Alfresco – Empresa de rentas vitalicias<br/>
+                - Instalación y configuración de Alfresco en múltiples servidores (web, base de datos, indexador), adaptando la infraestructura a los requerimientos del cliente.<br/>
+                - Gestión de respaldos críticos de binarios y documentación del sistema Alfresco, asegurando la continuidad operativa.<br/>
+                </p>
+                <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong> React, Next.js, PrimeReact, Javascript</p>
+
+            </div>
+            </div>
+
+             <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>Práctica Analista Programador Computacional</h3>
+                <p class="timeline-content-empresa">Apiux Tech • Usando el poder de la Tecnología para transformar su negocio</p>
+                <p class="timeline-content-tiempo"><em>enero 2023 - marzo 2023</em></p>
+                <p>- Manejo de servidores Linux y conexión remota.<br/>
+                    - Instalación y configuración de programa gestor documental Alfresco en servidores y consumo de APIs.<br/>
+                    - Desarrollo de programa en Python para carga masiva de documentación a servidor de Alfresco.<br/>
+                    - Desarrollo de cursos relacionado a Postgresql, Git y GitHub y Metodologías Agiles.<br/>
+                </p>
+                <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong> Git, GitHub, PostgreSql, Linux, Scrum </p>
+
+            </div>
+            </div>
+
+        </div>
+        </section>
+
+        <section id="estudios" class="sobre-mi">
+        <h2>Estudios</h2>
+            <div class="estudios-class">
+                <div class="hero-image">
+                    <img src="./src/img/duocLogo.png" alt="">
+                </div>
+                <div class="hero-text">
+                <h3>Ingenieria en Informática</h3>
+                <p class="timeline-content-empresa">Duoc UC</p>
+                <p class="timeline-content-tiempo"><em>marzo 2024 - diciembre 2025</em></p>
+            </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="sobre-mi" > 
+        <h2>Contacto</h2>
+        <p>Correo, redes sociales o formulario de contacto.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
