@@ -3,7 +3,9 @@
  body {
     font-family: "Poppins", sans-serif;
     /* font-weight: 100; */
-    background-color: #F1F5F9
+    background-color: #F1F5F9;
+    margin: 0 auto
+;
     /* color:whitesmoke */
 
  }
@@ -14,7 +16,7 @@
     padding: 1rem 2rem;
     background-color:#1A3A6E;
     color:white;
-    border-radius: 10px;
+
   }
 
   .logo {
@@ -50,7 +52,8 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background-color: #F7F7F7;
+background: #aba9cc;
+background: linear-gradient(90deg,rgba(171, 169, 204, 1) 0%, rgba(230, 230, 255, 1) 45%, rgba(183, 215, 237, 1) 83%);
   gap: 15rem;
   flex-wrap: wrap;
   text-align: center;
