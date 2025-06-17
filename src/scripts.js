@@ -1,7 +1,7 @@
 
 
 function copiarCorreo() {
-  const correo = "matias.ramirez@email.com"; 
+  const correo = "matias.ramirez@gmail.com"; 
   navigator.clipboard.writeText(correo).then(() => {
     const mensaje = document.getElementById("mensaje-copiado");
     mensaje.classList.add("show");
@@ -12,4 +12,15 @@ function copiarCorreo() {
   }).catch(err => {
     console.error("Error al copiar el correo:", err);
   });
+}
+
+function cvDescargado() {
+  const mensaje = document.getElementById("mensaje-descargado");
+  if (mensaje) {
+    mensaje.classList.add("show");
+
+    setTimeout(() => {
+      mensaje.classList.remove("show");
+    }, 5000);
+  }
 }

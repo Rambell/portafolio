@@ -29,31 +29,34 @@
     </header>
 
     <main>
+                
         <section class="hero">
-            <div class="hero-image">
-                <img src="./src/img/catByte.jpeg" alt="byte" />
+        <div class="hero-image">
+            <div>
+                <img class="image-perfil" src="./assets/img/matiasR.JPG" alt="matias" />
             </div>
-            <div class="hero-text">
-                <h1>Matías Ramírez Belmar</h1>
-                <p>Desarrollador de Software</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
-                        <img class="logo_linkedin" src="./src/img/LI-In-Bug.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
-                        <img class="logo_linkedin" src="./src/img/github-mark.png" alt="LinkedIn">
-                    </a>
 
-                    <a href="#" onclick="copiarCorreo()" title="Copiar correo">
-                        <img class="logo_gmail" src="./src/img/icons8-gmail-nuevo-48.png" alt="Copiar correo" />
-                    </a>
-
-                    <!-- <span class="tooltip-text">Copiar correo</span> -->
-
-                   <span id="mensaje-copiado" class="toast-copiado">¡Correo copiado!</span>
-
-                </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_icono" src="./assets/img/LI-In-Bug.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/matiasramirezlink" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_icono" src="./assets/img/github-mark.png" alt="GitHub">
+                </a>
+                <a href="#" onclick="copiarCorreo()" title="Copiar correo">
+                    <img class="logo_icono" src="./assets/img/icons8-gmail-nuevo-48.png" alt="Copiar correo" />
+                </a>
+                
+                <span id="mensaje-copiado" class="toast-copiado">¡Correo copiado!</span>
             </div>
+        </div>
+
+        <div class="hero-text">
+            <h1>Matías <span>Ram</span> írez <span>Bel</span>mar</h1>
+            <p>Desarrollador de Software</p>
+            <a href="./assets/pdf/Cv matiasRamirez.pdf" class="cv-button" download onclick="cvDescargado()" > 📄 Descargar CV</a>
+            <span id="mensaje-descargado" class="toast-copiado">¡CV Descargado!</span>
+        </div>
         </section>
 
         <section id="sobre-mi" class="sobre-mi">
@@ -149,7 +152,7 @@
         <h2>Estudios</h2>
             <div class="estudios-class">
                 <div class="hero-image">
-                    <img src="./src/img/duocLogo.png" alt="">
+                    <img src="./assets/img/duocLogo.png" alt="">
                 </div>
                 <div class="hero-text">
                 <h3>Ingenieria en Informática</h3>
