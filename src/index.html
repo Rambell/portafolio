@@ -40,7 +40,7 @@
                 <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
                     <img class="logo_icono" src="./assets/img/LI-In-Bug.png" alt="LinkedIn">
                 </a>
-                <a href="https://github.com/matiasramirezlink" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Rambell?tab=overview&from=2025-06-01&to=2025-06-17" target="_blank" rel="noopener noreferrer">
                     <img class="logo_icono" src="./assets/img/github-mark.png" alt="GitHub">
                 </a>
                 <a href="#" onclick="copiarCorreo()" title="Copiar correo">
@@ -54,95 +54,286 @@
         <div class="hero-text">
             <h1>Matías <span>Ram</span> írez <span>Bel</span>mar</h1>
             <p>Desarrollador de Software</p>
-            <a href="./assets/pdf/Cv matiasRamirez.pdf" class="cv-button" download onclick="cvDescargado()" > 📄 Descargar CV</a>
+            <a href="./assets/pdf/Cv matiasRamirez.pdf" class="cv-button" download onclick="cvDescargado()" >Descargar CV</a>
             <span id="mensaje-descargado" class="toast-copiado">¡CV Descargado!</span>
         </div>
         </section>
 
         <section id="sobre-mi" class="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>Actualmente trabajando como desarrollador Front-End en React.JS. Titulado de Analista Programador Computacional 
-                y cursando el séptimo semestre de Ingeniería en Informática.
-                Me considero un profesional con capacidad de adaptación, proactivo y creativo, 
-                con habilidades de trabajo en equipo.
-            </p>
+            <div class="background-shape"></div>
+            <div>
+                <h2>Sobre mí</h2>
+                <p>
+                    Soy Desarrollador Front-End especializado en React.js, actualmente cursando el séptimo semestre de Ingeniería en Informática y 
+                    titulado como Analista Programador Computacional. Me apasiona construir interfaces web modernas, responsivas y orientadas a la experiencia del usuario.
+                    He trabajado con tecnologías como React.js, Redux, Next.js, Material UI, TailwindCSS, JavaScript, TypeScript y consumo de APIs REST. También tengo 
+                    experiencia en desarrollo backend con Node.js, Express y bases de datos como MongoDB y Firebase.
+                    Me considero una persona proactiva, adaptable y con un fuerte enfoque en el trabajo colaborativo. 
+                    Siempre estoy buscando aprender nuevas herramientas y seguir creciendo profesionalmente en el desarrollo web.
+                </p>
+            </div>
         </section>
 
-        <section id="proyectos" class="sobre-mi">
-        <h2>Proyectos</h2>
-            <article>
-                <h3>Nombre del Proyecto</h3>
-                <p>Descripción, tecnologías usadas, enlace a GitHub o demo.</p>
-            </article>
-            <article>
-                <h3>Nombre del Proyecto</h3>
-                <p>Descripción, tecnologías usadas, enlace a GitHub o demo.</p>
-            </article>
+        <section id="proyectos" class="proyectos">
+            <div class="background-shape-proyecto"></div>
+            <h2>Proyectos</h2>
+
+            <div class="proyecto">
+                <div class="proyecto-img">
+                    <img src="./assets/img/rutas.jpg" alt="Proyecto 1">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Planificador de Rutas</h3>
+                    <p>App web para planificar rutas con múltiples paradas usando Google Maps API.</p>
+                    <div class="tecnologias">
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/react.png" alt="React">
+                            <span>React.JS</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/material ui.png" alt="MUI">
+                            <span>Material-UI</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/Node.png" alt="Node">
+                            <span>Node.Js</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/Express.png" alt="Express">
+                            <span>Express.Js</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/mongodb.png" alt="Mongodb">
+                            <span>Mongo.Js</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/GCP.png" alt="GCP">
+                            <span>Google Cloud</span>
+                        </div>
+                    
+                    </div>
+                    <div class="proyecto-info-btn">
+                        <button class="btn-mas abrir-modal" data-proyecto="rutas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="proyecto-img">
+                    <img src="./assets/img/rutas.jpg" alt="Proyecto 1">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Planificador de Rutas</h3>
+                    <p>App web para planificar rutas con múltiples paradas usando Google Maps API.</p>
+                    <div class="tecnologias">
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/react.png" alt="React">
+                            <span>React.JS</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/material ui.png" alt="MUI">
+                            <span>Material-UI</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/Node.png" alt="Node">
+                            <span>Node.Js</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/Express.png" alt="Express">
+                            <span>Express.Js</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/mongodb.png" alt="Mongodb">
+                            <span>Mongo.Js</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/GCP.png" alt="GCP">
+                            <span>Google Cloud</span>
+                        </div>
+                    
+                    </div>
+                    <div class="proyecto-info-btn">
+                        <button class="btn-mas abrir-modal" data-proyecto="rutas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="proyecto-img">
+                    <img src="./assets/img/rutas.jpg" alt="Proyecto 1">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Planificador de Rutas</h3>
+                    <p>App web para planificar rutas con múltiples paradas usando Google Maps API.</p>
+                    <div class="tecnologias">
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/react.png" alt="React">
+                            <span>React.JS</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/material ui.png" alt="MUI">
+                            <span>Material-UI</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/Node.png" alt="Node">
+                            <span>Node.Js</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/Express.png" alt="Express">
+                            <span>Express.Js</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/mongodb.png" alt="Mongodb">
+                            <span>Mongo.Js</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/GCP.png" alt="GCP">
+                            <span>Google Cloud</span>
+                        </div>
+                    
+                    </div>
+                    <div class="proyecto-info-btn">
+                        <button class="btn-mas abrir-modal" data-proyecto="rutas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section class="sobre-mi" id="experiencia">
+        <div id="modal-proyecto" class="modal">
+            <div class="modal-content">
+                <span class="cerrar">&times;</span>
+                <h3>Planificador de Rutas</h3>
+                <p>App que permite planificar rutas múltiples optimizadas usando Google Maps API, pensada para repartidores o logística urbana.</p>
+                <ul>
+                <li>✅ Frontend en React + MUI</li>
+                <li>✅ Backend en Node + Express</li>
+                <li>✅ Base de datos en MongoDB</li>
+                <li>✅ Despliegue en Google Cloud Platform</li>
+                </ul>
+                <img src="./assets/img/rutas-demo.png" alt="Captura del proyecto" class="modal-img">
+                <div class="modal-links">
+                <a href="https://github.com/Rambell/proyecto-rutas" target="_blank">Ver GitHub</a>
+                <a href="https://demo.rutas.com" target="_blank">Ver Demo</a>
+                </div>
+            </div>
+            </div>
+
+        <section class="experiencia" id="experiencia">
             <h2>Experiencia</h2>
             <div class="timeline">
 
             <div class="timeline-item">
-            <div class="timeline-point"></div>
-            <div class="timeline-content">
-                <h3>Desarrollador Front-End en React</h3>
-                <p class="timeline-content-empresa">IT SMART • Especialistas en Servicios TI</p>
-                <p class="timeline-content-tiempo"><em>julio 2024 - Actualidad</em></p>
-                <p><em>Trabajando para los clientes de la empresa Socius.</em></p>
-                <p>
-                    Renovación de portal web para importante empresa de seguros (Chile) <br/>
-                    - Desarrollo del Front-end con React JS y Material-UI, 
-                    aplicando patrones de diseño consistentes.<br/>
-                    - Implementación de manejo de estados global con Redux y 
-                    middleware asincrónico con Redux Thunk, optimizando el flujo de datos y 
-                    mejorando la performance de la aplicación.<br/>
-                    Apoyo en la documentación técnica de bases de datos y consumo de API REST, facilitando la integración entre Front-end y Back-end.<br/>
-                    - Participación en un proceso de migración tecnológica desde Genexus a React, contribuyendo a la modernización de una plataforma crítica para la operación del cliente.
+                <div class="timeline-point"></div>
+                <div class="timeline-content">
+                    <h3>Desarrollador Front-End en React</h3>
+                    <p class="timeline-content-empresa">IT SMART • Especialistas en Servicios TI</p>
+                    <p class="timeline-content-tiempo"><em>julio 2024 - Actualidad</em></p>
+                    <p><em>Trabajando para los clientes de la empresa Socius.</em></p>
+                    <p>
+                        Renovación de portal web para importante empresa de seguros (Chile) <br/>
+                        - Desarrollo del Front-end con React JS y Material-UI, 
+                        aplicando patrones de diseño consistentes.<br/>
+                        - Implementación de manejo de estados global con Redux y 
+                        middleware asincrónico con Redux Thunk, optimizando el flujo de datos y 
+                        mejorando la performance de la aplicación.<br/>
+                        Apoyo en la documentación técnica de bases de datos y consumo de API REST, facilitando la integración entre Front-end y Back-end.<br/>
+                        - Participación en un proceso de migración tecnológica desde Genexus a React, contribuyendo a la modernización de una plataforma crítica para la operación del cliente.
 
-                </p>
-                <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong> React, Redux, Material-UI, Javascript</p>
+                    </p>
+                    <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong></p>
+                    <div class="tecnologias">
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/HTML.png" alt="HTML">
+                            <span>HTML</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/javascript.png" alt="javascript">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/css.svg" alt="css">
+                            <span>CSS</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/react.png" alt="React">
+                            <span>React.JS</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/material ui.png" alt="MUI">
+                            <span>Material-UI</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/material ui.png" alt="MUI">
+                            <span>Redux</span>
+                        </div>
+                    </div>
 
-            </div>
+                </div>
             </div>
 
             <div class="timeline-item">
-            <div class="timeline-point"></div>
-            <div class="timeline-content">
-                <h3>Consultor Trainee</h3>
-                <p class="timeline-content-empresa">Apiux Tech • Usando el poder de la Tecnología para transformar su negocio</p>
-                <p class="timeline-content-tiempo"><em>abril 2023 - junio 2024</em></p>
-                <p>Renovación de portal web – Importante empresa de transporte de valores<br/> 
-                - Desarrollo Front-end con React y Next.js, enfocando en performance y experiencia de usuario.<br/>
-                - Diseño y propuesta de interfaces usando Prime React, asegurando consistencia visual y usabilidad.<br/>
-                Proyecto interno – Gestión de documentación de RRHH<br/>
-                - Desarrollo Front-end en React JS, colaborando en la creación de módulos para manejo de datos sensibles y flujos internos.<br/>
-                Proyecto de gestión documental – Mayor proyecto astronómico en Chile<br/>
-                - Desarrollo Front-end en React JS, apoyando en la implementación de vistas y componentes para la gestión y consulta de documentos científicos.<br/>
-                Proyecto Alfresco – Empresa de rentas vitalicias<br/>
-                - Instalación y configuración de Alfresco en múltiples servidores (web, base de datos, indexador), adaptando la infraestructura a los requerimientos del cliente.<br/>
-                - Gestión de respaldos críticos de binarios y documentación del sistema Alfresco, asegurando la continuidad operativa.<br/>
-                </p>
-                <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong> React, Next.js, PrimeReact, Javascript</p>
+                <div class="timeline-point"></div>
+                <div class="timeline-content">
+                    <h3>Consultor Trainee</h3>
+                    <p class="timeline-content-empresa">Apiux Tech • Usando el poder de la Tecnología para transformar su negocio</p>
+                    <p class="timeline-content-tiempo"><em>abril 2023 - junio 2024</em></p>
+                    <p>Renovación de portal web – Importante empresa de transporte de valores<br/> 
+                    - Desarrollo Front-end con React y Next.js, enfocando en performance y experiencia de usuario.<br/>
+                    - Diseño y propuesta de interfaces usando Prime React, asegurando consistencia visual y usabilidad.<br/>
+                    Proyecto interno – Gestión de documentación de RRHH<br/>
+                    - Desarrollo Front-end en React JS, colaborando en la creación de módulos para manejo de datos sensibles y flujos internos.<br/>
+                    Proyecto de gestión documental – Mayor proyecto astronómico en Chile<br/>
+                    - Desarrollo Front-end en React JS, apoyando en la implementación de vistas y componentes para la gestión y consulta de documentos científicos.<br/>
+                    Proyecto Alfresco – Empresa de rentas vitalicias<br/>
+                    - Instalación y configuración de Alfresco en múltiples servidores (web, base de datos, indexador), adaptando la infraestructura a los requerimientos del cliente.<br/>
+                    - Gestión de respaldos críticos de binarios y documentación del sistema Alfresco, asegurando la continuidad operativa.<br/>
+                    </p>
+                    <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong></p>
+                    <div class="tecnologias">
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/HTML.png" alt="HTML">
+                            <span>HTML</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/javascript.png" alt="javascript">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/css.svg" alt="css">
+                            <span>CSS</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/react.png" alt="React">
+                            <span>React.JS</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/Next.js.png" alt="Next">
+                            <span>Next.JS</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/primereact.png" alt="primereact">
+                            <span>PrimeReact</span>
+                        </div>
+                    </div>
 
-            </div>
+                </div>
             </div>
 
-             <div class="timeline-item">
-            <div class="timeline-point"></div>
-            <div class="timeline-content">
-                <h3>Práctica Analista Programador Computacional</h3>
-                <p class="timeline-content-empresa">Apiux Tech • Usando el poder de la Tecnología para transformar su negocio</p>
-                <p class="timeline-content-tiempo"><em>enero 2023 - marzo 2023</em></p>
-                <p>- Manejo de servidores Linux y conexión remota.<br/>
-                    - Instalación y configuración de programa gestor documental Alfresco en servidores y consumo de APIs.<br/>
-                    - Desarrollo de programa en Python para carga masiva de documentación a servidor de Alfresco.<br/>
-                    - Desarrollo de cursos relacionado a Postgresql, Git y GitHub y Metodologías Agiles.<br/>
-                </p>
-                <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong> Git, GitHub, PostgreSql, Linux, Scrum </p>
+            <div class="timeline-item">
+                <div class="timeline-point"></div>
+                <div class="timeline-content">
+                    <h3>Práctica Analista Programador Computacional</h3>
+                    <p class="timeline-content-empresa">Apiux Tech • Usando el poder de la Tecnología para transformar su negocio</p>
+                    <p class="timeline-content-tiempo"><em>enero 2023 - marzo 2023</em></p>
+                    <p>- Manejo de servidores Linux y conexión remota.<br/>
+                        - Instalación y configuración de programa gestor documental Alfresco en servidores y consumo de APIs.<br/>
+                        - Desarrollo de programa en Python para carga masiva de documentación a servidor de Alfresco.<br/>
+                        - Desarrollo de cursos relacionado a Postgresql, Git y GitHub y Metodologías Agiles.<br/>
+                    </p>
+                    <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong> Git, GitHub, PostgreSql, Linux, Scrum </p>
 
-            </div>
+                </div>
             </div>
 
         </div>
