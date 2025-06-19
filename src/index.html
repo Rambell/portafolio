@@ -18,7 +18,10 @@
             <div class="logo">
                 <img class="logo_imagen" src="./src/img/logo1.5.png" alt="rambel">
             </div>
-            <ul class="nav-links">
+            <div class="menu-toggle" id="menu-toggle">
+            ☰
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
@@ -54,6 +57,21 @@
             <div class="hero-text">
                 <h1>Matías <span>Ram</span> írez <span>Bel</span>mar</h1>
                 <p>Desarrollador de Software</p>
+
+                <div class="social-links-responsive">
+                    <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
+                        <img class="logo_icono" src="./assets/img/LI-In-Bug.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Rambell?tab=overview&from=2025-06-01&to=2025-06-17" target="_blank" rel="noopener noreferrer">
+                        <img class="logo_icono" src="./assets/img/github-mark.png" alt="GitHub">
+                    </a>
+                    <a href="#" onclick="copiarCorreo()" title="Copiar correo">
+                        <img class="logo_icono" src="./assets/img/icons8-gmail-nuevo-48.png" alt="Copiar correo" />
+                    </a>
+                    
+                    <span id="mensaje-copiado" class="toast-copiado">¡Correo copiado!</span>
+                </div>
+
                 <a href="./assets/pdf/Cv matiasRamirez.pdf" class="cv-button" download onclick="cvDescargado()" >Descargar CV</a>
                 <span id="mensaje-descargado" class="toast-copiado">¡CV Descargado!</span>
             </div>
@@ -416,7 +434,6 @@
 
         <section id="contacto" class="contacto" > 
             <h2>Contacto</h2>
-
             <div class="contacto-content">
 
                 <div class="contacto-image">
@@ -426,25 +443,31 @@
 
                 </div>
 
-                <div class="hero-text">
-                    <div>
-                        <p>Click aqui para copiar correo</p>
-                        <a  onclick="copiarCorreo()" title="Copiar correo">
-                            <img class="logo_icono" src="./assets/img/icons8-gmail-nuevo-48.png" alt="Copiar correo" />
+                <div class="contacto-text">
+
+                    <div class="contacto-correo">
+                        <p>Haz clic aquí para copiar el correo</p>
+                        <a onclick="copiarCorreo()" title="Copiar correo">
+                        <img class="logo_icono-contacto" src="./assets/img/icons8-gmail-nuevo-48.png" alt="Copiar correo" />
+                        <span id="mensaje-copiado" class="toast-copiado">¡Correo copiado!</span>
                         </a>
                     </div>
-                    
-                    
-                    <span id="mensaje-copiado" class="toast-copiado">¡Correo copiado!</span>
-                        <a href="./assets/pdf/Cv matiasRamirez.pdf" class="cv-button" download onclick="cvDescargado()" >Descargar CV</a>
-                    <span id="mensaje-descargado" class="toast-copiado">¡CV Descargado!</span>
+
+                    <div class="contacto-links">
+                        <a href="./assets/pdf/Cv matiasRamirez.pdf" class="cv-button" download onclick="cvDescargado()">Descargar CV</a>
+                        <span id="mensaje-descargado" class="toast-copiado">¡CV Descargado!</span>
+                        <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
+                        <img class="logo_icono" src="./assets/img/LI-In-Bug.png" alt="LinkedIn">
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Matías Ramírez Belmar Todos los derechos reservados.</p>
     </footer>
 
 
