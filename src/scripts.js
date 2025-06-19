@@ -1,7 +1,7 @@
 
 
 function copiarCorreo() {
-  const correo = "matias.ramirez@gmail.com"; 
+  const correo = "matias.ramirez28@gmail.com"; 
   navigator.clipboard.writeText(correo).then(() => {
     const mensaje = document.getElementById("mensaje-copiado");
     mensaje.classList.add("show");

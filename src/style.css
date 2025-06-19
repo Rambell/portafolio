@@ -53,7 +53,7 @@
   justify-content: center;
   padding: 2rem;
   background: #aba9cc;
-  background: linear-gradient(90deg,rgba(171, 169, 204, 1) 0%, rgba(230, 230, 255, 1) 45%, rgba(183, 215, 237, 1) 83%);
+  background: linear-gradient(90deg,rgba(171, 169, 204, 1) 0%, rgba(230, 230, 255, 1) 45%, rgba(183, 215, 237, 1) 83%); 
   gap: 15rem;
   flex-wrap: wrap;
   text-align: center;
@@ -204,7 +204,7 @@
 
 .background-shape-proyecto{
   position: absolute;
-  top: 1530px;
+  top: 1320px;
   /* right: 190px; */
   left: 70px;
   width: 500px;
@@ -215,6 +215,19 @@
   z-index: 0;
 }
 
+.background-shape-proyecto2{
+  position: absolute;
+  top: 1860px;
+  right: 190px; 
+  width: 500px;
+  height: 500px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+
 .proyectos h2 {
   font-size: 35px;
   padding: 30px 0;
@@ -223,7 +236,6 @@
   justify-content: center;
   color: #420baf;
 }
-
 
 .proyecto-img img {
   width: 320px;
@@ -369,7 +381,7 @@
 
 .experiencia {
   padding: 40px;
-  background-color: #fafaff;
+  background-color: #f7f7f7;
 }
 
 .experiencia h2 {
@@ -417,7 +429,7 @@
   left: 0;
   width: 20px;
   height: 20px;
-  background-color: #274d9d;
+  background-color: #420baf;
   border: 3px solid #fff; /* color del borde */
   border-radius: 50%;
   z-index: 1;
@@ -471,15 +483,128 @@
   padding-right: 10px;
 }
 
-.estudios-class{
+
+.estudio {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 60%;
+  gap: 2rem;
+
+}
+
+
+.estudios h2 {
+  font-size: 35px;
+  padding: 30px 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  margin: 60px auto;
-  padding-bottom: 40px;
-  display: flex;
-  padding: 2rem;
+  color: #420baf;
 }
+
+.estudio-img img {
+  margin-left: 50px;
+  width: 200px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.estudio-img-inacap{
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 200px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.estudio-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.estudio-info h3 {
+  margin: 0;
+  font-size: 26px;
+  color: #212129;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.estudio-info p {
+  font-size: 16px;
+  margin: 0.5rem 0 1rem;
+}
+
+.estudios-info-tag{
+  border-radius: 20px;
+  background-color: #420baf;;
+  color: white;
+  padding: 4px 10px;
+}
+
+.contacto {
+  padding: 40px;
+  background-color: #f7f7f7;
+}
+
+.contacto h2 {
+  font-size: 35px;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #420baf;
+}
+
+.contacto-content{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 2rem;
+  gap: 15rem;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 55vh;
+}
+
+.contacto-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contacto-image img {
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color:#212129;
+  color:white;
+}
+
+
+
   @media (max-width: 768px) {
     .hero {
       flex-direction: column;

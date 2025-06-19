@@ -31,32 +31,32 @@
     <main>
                 
         <section class="hero">
-        <div class="hero-image">
-            <div>
-                <img class="image-perfil" src="./assets/img/matiasR.JPG" alt="matias" />
+            <div class="hero-image">
+                <div>
+                    <img class="image-perfil" src="./assets/img/matiasR.JPG" alt="matias" />
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
+                        <img class="logo_icono" src="./assets/img/LI-In-Bug.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Rambell?tab=overview&from=2025-06-01&to=2025-06-17" target="_blank" rel="noopener noreferrer">
+                        <img class="logo_icono" src="./assets/img/github-mark.png" alt="GitHub">
+                    </a>
+                    <a href="#" onclick="copiarCorreo()" title="Copiar correo">
+                        <img class="logo_icono" src="./assets/img/icons8-gmail-nuevo-48.png" alt="Copiar correo" />
+                    </a>
+                    
+                    <span id="mensaje-copiado" class="toast-copiado">¡Correo copiado!</span>
+                </div>
             </div>
 
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
-                    <img class="logo_icono" src="./assets/img/LI-In-Bug.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Rambell?tab=overview&from=2025-06-01&to=2025-06-17" target="_blank" rel="noopener noreferrer">
-                    <img class="logo_icono" src="./assets/img/github-mark.png" alt="GitHub">
-                </a>
-                <a href="#" onclick="copiarCorreo()" title="Copiar correo">
-                    <img class="logo_icono" src="./assets/img/icons8-gmail-nuevo-48.png" alt="Copiar correo" />
-                </a>
-                
-                <span id="mensaje-copiado" class="toast-copiado">¡Correo copiado!</span>
+            <div class="hero-text">
+                <h1>Matías <span>Ram</span> írez <span>Bel</span>mar</h1>
+                <p>Desarrollador de Software</p>
+                <a href="./assets/pdf/Cv matiasRamirez.pdf" class="cv-button" download onclick="cvDescargado()" >Descargar CV</a>
+                <span id="mensaje-descargado" class="toast-copiado">¡CV Descargado!</span>
             </div>
-        </div>
-
-        <div class="hero-text">
-            <h1>Matías <span>Ram</span> írez <span>Bel</span>mar</h1>
-            <p>Desarrollador de Software</p>
-            <a href="./assets/pdf/Cv matiasRamirez.pdf" class="cv-button" download onclick="cvDescargado()" >Descargar CV</a>
-            <span id="mensaje-descargado" class="toast-copiado">¡CV Descargado!</span>
-        </div>
         </section>
 
         <section id="sobre-mi" class="sobre-mi">
@@ -76,6 +76,7 @@
 
         <section id="proyectos" class="proyectos">
             <div class="background-shape-proyecto"></div>
+            <div class="background-shape-proyecto2"></div>
             <h2>Proyectos</h2>
 
             <div class="proyecto">
@@ -264,7 +265,7 @@
                             <span>Material-UI</span>
                         </div>
                         <div class="tecnologia-colums"> 
-                            <img src="./assets/img/material ui.png" alt="MUI">
+                            <img src="./assets/img/redux.png" alt="Redux">
                             <span>Redux</span>
                         </div>
                     </div>
@@ -331,7 +332,29 @@
                         - Desarrollo de programa en Python para carga masiva de documentación a servidor de Alfresco.<br/>
                         - Desarrollo de cursos relacionado a Postgresql, Git y GitHub y Metodologías Agiles.<br/>
                     </p>
-                    <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong> Git, GitHub, PostgreSql, Linux, Scrum </p>
+                    <p ><strong class="timeline-content-tecnologia">Tecnologías:</strong></p>
+                    <div class="tecnologias">
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/git.png" alt="git">
+                            <span>GIT</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/github-mark.png" alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/PostgresSQL.png" alt="PostgreSql">
+                            <span>PostgreSql</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/linux.png" alt="linux">
+                            <span>Linux</span>
+                        </div>
+                        <div class="tecnologia-colums"> 
+                            <img src="./assets/img/scrum.png" alt="Scrum">
+                            <span>Scrum</span>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -339,27 +362,88 @@
         </div>
         </section>
 
-        <section id="estudios" class="sobre-mi">
-        <h2>Estudios</h2>
-            <div class="estudios-class">
-                <div class="hero-image">
-                    <img src="./assets/img/duocLogo.png" alt="">
+        <section id="estudios" class="estudios">
+            <h2>Estudios</h2>
+
+                <div class="estudio">
+                    <div class="estudio-img">
+                        <a href="https://www.duoc.cl/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/duocLogo.png" alt="DuocUC">
+                        </a>
+                    </div>
+                    <div class="estudio-info">
+                        <h3>Ingenieria en Informática</h3>
+                        <p class="timeline-content-empresa">Duoc UC</p>
+                        <p class="timeline-content-tiempo"><em>marzo 2024 - diciembre 2025</em></p>
+                        <span class="estudios-info-tag">En curso</span>
+                        
+                        
+                    </div>
                 </div>
-                <div class="hero-text">
-                <h3>Ingenieria en Informática</h3>
-                <p class="timeline-content-empresa">Duoc UC</p>
-                <p class="timeline-content-tiempo"><em>marzo 2024 - diciembre 2025</em></p>
-            </div>
-            </div>
+
+                <div class="estudio">
+                    <div class="estudio-img">
+                        <a href="https://www.duoc.cl/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/duocLogo.png" alt="DuocUC">
+                        </a>
+                    </div>
+                    <div class="estudio-info">
+                        <h3>Analista Programador Computacional</h3>
+                        <p class="timeline-content-empresa">Duoc UC</p>
+                        <p class="timeline-content-tiempo"><em>marzo 2021 - junio 2023</em></p>
+                        <a href="https://drive.google.com/file/d/1y9_uyTKXRwEJQzGmqBcSb1pqQMRIPajU/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <span class="estudios-info-tag">Ver certificado</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="estudio">
+                    <div >
+                        <a href="https://portal.inacap.cl/" target="_blank" rel="noopener noreferrer">
+                            <img class="estudio-img-inacap" src="./assets/img/inacap.png" alt="Inacap">
+                        </a>
+                    </div>
+                    <div class="estudio-info">
+                        <h3>Automatización y control industrial</h3>
+                        <p class="timeline-content-empresa">Inacap</p>
+                        <p class="timeline-content-tiempo"><em>marzo 2013 - diciembre 2014</em></p>
+                        <a href="https://drive.google.com/file/d/1uyMC9hmLHXC9lVLjw1arLqbmr4nZth9z/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <span class="estudios-info-tag">Ver certificado</span>
+                        </a>
+                    </div>
+                </div>
         </section>
 
-        <section id="contacto" class="sobre-mi" > 
-        <h2>Contacto</h2>
-        <p>Correo, redes sociales o formulario de contacto.</p>
+        <section id="contacto" class="contacto" > 
+            <h2>Contacto</h2>
+
+            <div class="contacto-content">
+
+                <div class="contacto-image">
+                    <div>
+                        <img class="image-perfil" src="./assets/img/catByte.jpeg" alt="matias" />
+                    </div>
+
+                </div>
+
+                <div class="hero-text">
+                    <div>
+                        <p>Click aqui para copiar correo</p>
+                        <a  onclick="copiarCorreo()" title="Copiar correo">
+                            <img class="logo_icono" src="./assets/img/icons8-gmail-nuevo-48.png" alt="Copiar correo" />
+                        </a>
+                    </div>
+                    
+                    
+                    <span id="mensaje-copiado" class="toast-copiado">¡Correo copiado!</span>
+                        <a href="./assets/pdf/Cv matiasRamirez.pdf" class="cv-button" download onclick="cvDescargado()" >Descargar CV</a>
+                    <span id="mensaje-descargado" class="toast-copiado">¡CV Descargado!</span>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
     </footer>
 
