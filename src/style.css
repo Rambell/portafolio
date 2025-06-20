@@ -440,25 +440,20 @@ body {
 }
 
 .timeline-content h3 {
-  margin: 0 0 5px;
+  margin: 0 0 0px;
   color: #274d9d ;
   font-weight: bold;
   font-size: 21px;
+}
+
+.timeline-content h3:hover {
+  color: #4b7eeb ;
 }
 
 .timeline-content p {
   margin: 0 0 5px;
   justify-content: flex-start;
 }
-
-/* .timeline-content a {
-  color: #2563eb;
-  text-decoration: none;
-} */
-
-/* .timeline-content a:hover {
-  text-decoration: underline;
-} */
 
 .timeline-content-empresa{
   padding: 0;
@@ -479,6 +474,39 @@ body {
 
 .timeline-content-tecnologia{
   padding-right: 10px;
+}
+
+.detalle-experiencia {
+  display: none;
+  margin-top: 10px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.timeline-header{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.timeline-header:hover{
+  background-color: #f7efef;
+  border-radius: 8px;
+}
+
+
+.toggle-header {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #888;
+  padding-left: 20px;
 }
 
 .estudios {

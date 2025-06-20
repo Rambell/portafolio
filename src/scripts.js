@@ -65,3 +65,14 @@ function inicializarNavbarResponsive() {
 
 // Ejecutar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', inicializarNavbarResponsive);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = document.querySelectorAll(".toggle-header");
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const detalle = header.parentElement.querySelector(".detalle-experiencia");
+      detalle.style.display = detalle.style.display === "block" ? "none" : "block";
+    });
+  });
+});
+
