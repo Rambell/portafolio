@@ -967,6 +967,13 @@ body {
     z-index: 0;
   }
 
+  .proyecto {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 1rem;
+  }
+
   .proyecto-img img {
     width: 444px;
     border-radius: 8px;
@@ -1123,8 +1130,339 @@ body {
     z-index: 0;
   }
 
+  .proyecto {
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    padding: 1rem;
+  }
   .proyecto-img img {
-    width: 444px;
+    width: 380px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .background-shape-proyecto{
+    position: absolute;
+    top: 1360px;
+    left: 14px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, #fafaff 0%, #e8f0ff 100%);
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  .background-shape-proyecto2{
+    position: absolute;
+    top: 2020px;
+    right: 10px; 
+    width: 400px;
+    height: 400px;
+    background-color: #d7d4d4;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  .experiencia {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+    align-items: center;
+  }
+
+  .timeline {
+    position: relative;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .contacto-image img{
+    display: none;
+
+  }
+  .contacto-content{
+    display: block;
+    justify-content: center;
+    padding: 2rem;
+    gap: 15rem;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 50vh;
+  }
+
+}
+
+
+@media (max-width: 440px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px; /* debajo del nav */
+    left: 0;
+    width: 100%;
+    background-color: #212129;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem 0;
+    display: none; /* por defecto oculto */
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap:2rem
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-text-nombre {
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .hero-text-nombre h1{
+    margin:0
+
+  }
+
+  .social-links-responsive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .logo_icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+    transition: transform 0.2s ease; 
+  }
+
+  .logo_icono:hover {
+    transform: scale(1.1); 
+  }  
+
+  .sobre-mi {
+    position: relative;
+    background-color: #fff;
+    padding: 4rem 2rem;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .sobre-mi p {
+    font-size: 18px;
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background-shape {
+    position: absolute;
+    top: 25px;
+    right: 240px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, #E9E9E7 0%, #e8f0ff 100%);
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+ .proyecto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 1rem;
+  }
+  .proyecto-img img {
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .background-shape-proyecto{
+    position: absolute;
+    top: 1360px;
+    left: 14px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, #fafaff 0%, #e8f0ff 100%);
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  .background-shape-proyecto2{
+    position: absolute;
+    top: 2020px;
+    right: 10px; 
+    width: 400px;
+    height: 400px;
+    background-color: #d7d4d4;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  .experiencia {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+    align-items: center;
+  }
+
+  .timeline {
+    position: relative;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .contacto-image img{
+    display: none;
+
+  }
+  .contacto-content{
+    display: block;
+    justify-content: center;
+    padding: 2rem;
+    gap: 15rem;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 50vh;
+  }
+
+}
+
+@media (max-width: 440px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px; /* debajo del nav */
+    left: 0;
+    width: 100%;
+    background-color: #212129;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem 0;
+    display: none; /* por defecto oculto */
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap:2rem
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-text-nombre {
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .hero-text-nombre h1{
+    margin:0
+
+  }
+
+  .social-links-responsive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .logo_icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+    transition: transform 0.2s ease; 
+  }
+
+  .logo_icono:hover {
+    transform: scale(1.1); 
+  }  
+
+  .sobre-mi {
+    position: relative;
+    background-color: #fff;
+    padding: 4rem 2rem;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .sobre-mi p {
+    font-size: 18px;
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background-shape {
+    position: absolute;
+    top: 25px;
+    right: 240px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, #E9E9E7 0%, #e8f0ff 100%);
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+ .proyecto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 1rem;
+  }
+  .proyecto-img img {
+    width: 200px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   }
