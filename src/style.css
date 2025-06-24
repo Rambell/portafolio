@@ -1,13 +1,11 @@
  
- 
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0 auto
-}
+
 
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto
 }
 
 .navbar {
@@ -1472,29 +1470,15 @@ html, body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   }
 
-  .background-shape-proyecto{
-    position: absolute;
-    top: 1360px;
-    left: 14px;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle at center, #fafaff 0%, #e8f0ff 100%);
-    border-radius: 50%;
-    opacity: 0.3;
-    z-index: 0;
+
+  .background-shape-proyecto,
+  .background-shape-proyecto2 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+    right: auto;
   }
 
-  .background-shape-proyecto2{
-    position: absolute;
-    top: 2020px;
-    right: 10px; 
-    width: 400px;
-    height: 400px;
-    background-color: #d7d4d4;
-    border-radius: 50%;
-    opacity: 0.3;
-    z-index: 0;
-  }
 
   .experiencia {
     padding: 40px 0;
