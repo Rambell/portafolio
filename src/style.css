@@ -8,6 +8,151 @@ html, body {
   margin: 0 auto
 }
 
+
+body.dark-mode {
+  background-color: #3a2591;
+  color: #ffffff;
+}
+
+body .github-dark {
+  display: none;
+}
+
+body.dark-mode .github-light {
+  display: none;
+}
+
+body.dark-mode .github-dark {
+  display: inline;
+}
+
+.dark-mode .hero {
+  background: #020024;
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(12, 12, 145, 1) 47%, rgba(23, 20, 71, 1) 100%);
+}
+
+.dark-mode .hero-text h1 span {
+  color: #8e51ed;
+}
+
+.dark-mode .hero-text p {
+  color: #eee7e7;
+}
+
+.dark-mode .sobre-mi {
+  background-color: #101547;
+}
+
+.dark-mode .sobre-mi h2{
+  color: #d5d5d5;
+}
+
+.dark-mode .background-shape {
+  background: #9797ff;
+}
+
+.dark-mode .proyecto {
+  background-color: #1c1c1c;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .estudio{
+  background-color: #d5d5d5;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .proyectos h2,
+.dark-mode .estudios h2 {
+  color: #d5d5d5;
+}
+
+.dark-mode .proyecto-info h3 {
+  color: #d5d5d5;
+}
+
+.dark-mode .experiencia {
+  background-color: #050933;
+}
+
+.dark-mode .experiencia h2{
+  color: #d5d5d5;
+}
+
+.dark-mode .timeline-content h3 {
+  color: #8daef3;
+}
+
+.dark-mode a {
+  color: #ecf5fc;
+}
+
+.dark-mode .btn-mas {
+  background-color: #333;
+}
+
+.dark-mode .btn-mas:hover {
+  background-color: #555;
+}
+
+.dark-mode .estudio-info h3 {
+  color: #393434
+}
+
+.dark-mode .estudio-info p {
+  color: #393434
+}
+
+.dark-mode .contacto {
+  background-color: #090649;
+}
+.dark-mode .contacto h2 {
+  color: #d5d5d5;
+}
+
+.center-toggle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dark-mode-btn {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #444;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.dark-mode-btn .icon {
+  font-size: 16px;
+  z-index: 2;
+}
+
+.toggle-circle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* Cuando body está en modo oscuro */
+body.dark-mode .toggle-circle {
+  transform: translateX(30px);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -208,7 +353,7 @@ html, body {
   padding: 1rem;
   width: 60%;
   gap: 2rem;
-
+  align-items: center;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -706,6 +851,12 @@ html, body {
     padding: 1rem 0;
     display: none; /* por defecto oculto */
     z-index: 999;
+  }
+  
+  .center-toggle {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1rem;
   }
 
   .nav-links.show {

@@ -76,3 +76,27 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const toggle = document.getElementById("dark-mode-toggle");
+const body = document.body; // Usa el <body> directamente
+
+toggle.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+
+  // Opcional: guardar preferencia en localStorage
+  if (body.classList.contains("dark-mode")) {
+    localStorage.setItem("modoOscuro", "true");
+  } else {
+    localStorage.setItem("modoOscuro", "false");
+  }
+});
+
+// Cargar preferencia al iniciar
+document.addEventListener("DOMContentLoaded", () => {
+  const modoOscuroGuardado = localStorage.getItem("modoOscuro");
+  if (modoOscuroGuardado === "true") {
+    document.body.classList.add("dark-mode");
+  }
+});
+
+
+

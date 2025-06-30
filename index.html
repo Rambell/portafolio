@@ -13,20 +13,29 @@
 
     
 
-    <header>
+   <header>
         <nav class="navbar">
             <div class="logo">
-                <img class="logo_imagen" src="./src/assets/img/logo1.5.png" alt="rambel">
+            <img class="logo_imagen" src="./src/assets/img/logo1.5.png" alt="rambel">
             </div>
-            <div class="menu-toggle" id="menu-toggle">
-            ☰
+
+            <!-- Botón centrado -->
+            <div class="center-toggle">
+            <button id="dark-mode-toggle" class="dark-mode-btn" aria-label="Toggle dark mode">
+                <span class="icon sun">☀️</span>
+                <span class="icon moon">🌙</span>
+                <div class="toggle-circle"></div>
+            </button>
             </div>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
             <ul class="nav-links" id="nav-links">
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#estudios">Estudios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#estudios">Estudios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -42,10 +51,11 @@
 
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/matiasramirezlink/" target="_blank" rel="noopener noreferrer">
-                        <img class="logo_icono" src="./src/assets/img/LI-In-Bug.png" alt="LinkedIn">
+                        <img class="logo_icono linke-darg" src="./src/assets/img/LI-In-Bug.png" alt="LinkedIn">
                     </a>
                     <a href="https://github.com/Rambell?tab=overview&from=2025-06-01&to=2025-06-17" target="_blank" rel="noopener noreferrer">
-                        <img class="logo_icono" src="./src/assets/img/github-mark.png" alt="GitHub">
+                        <img class="logo_icono github-light" src="./src/assets/img/github-mark.png" alt="GitHub">
+                        <img class="logo_icono github-dark" src="./src/assets/img/github-mark-white.png" alt="GitHub">
                     </a>
                     <a href="#" onclick="copiarCorreo()" title="Copiar correo">
                         <img class="logo_icono" src="./src/assets/img/icons8-gmail-nuevo-48.png" alt="Copiar correo" />
